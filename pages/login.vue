@@ -64,6 +64,7 @@ onMounted(() => {
         // getAdditionalUserInfo(result)?.profile
         // You can check if the user is new or existing:
         // getAdditionalUserInfo(result)?.isNewUser
+        navigateTo("/");
       })
       .catch((error) => {
         // Some error occurred, you can inspect the code: error.code
