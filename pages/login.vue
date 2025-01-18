@@ -22,7 +22,7 @@ const user = await getCurrentUser();
 console.log(user);
 
 function signin() {
-  console.log(4)
+  console.log(4);
   const email = document.getElementById("email").value;
 
   sendSignInLinkToEmail(auth, email, {
