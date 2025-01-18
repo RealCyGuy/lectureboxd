@@ -1,16 +1,18 @@
 <template>
-  <h1> Hello, {{ user.email || 'guest'}}! Welcome back to LectureBoxd!</h1>
+  <Header />
+  <h1> Hello, {{user ? user.email : 'guest'}}! Welcome back to LectureBoxd!</h1>
   <button @click="signout">Sign out</button>
 </template>
 
 <script setup>
-import { signOut } from "firebase/auth";
+import Header from '@/pages/header.vue';
 
+import { signOut } from "firebase/auth";
 const user = await useCurrentUser();
 const auth = useFirebaseAuth();
 
 function signout() {
-  signOut(auth
+  signOut(auth)
     .then(() => {
       console.log("Sign out successful");
     })
