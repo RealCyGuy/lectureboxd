@@ -11,22 +11,20 @@
 
 <script setup>
 import Header from "@/pages/header.vue";
-import { signOut } from "firebase/auth";
-import { collection, query } from "firebase/firestore";
 
-const db = useFirestore();
-const users = useCollection(query(collection(db, "users")));
+// const db = useFirestore();
+// const users = useCollection(query(collection(db, "users")));
 
-const user = await useCurrentUser();
-const auth = useFirebaseAuth();
+// const user = await useCurrentUser();
+// const auth = useFirebaseAuth();
 
-function signout() {
-  signOut(auth)
-    .then(() => {
-      console.log("Sign out successful");
-    })
-    .catch((error) => {
-      console.error(error);
-    });
-}
+// function signout() {
+//   signOut(auth)
+//     .then(() => {
+//       console.log("Sign out successful");
+//     })
+//     .catch((error) => {
+//       console.error(error);
+//     });
+// }
 </script>
