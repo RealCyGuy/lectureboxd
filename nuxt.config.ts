@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-vuefire"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-vuefire",'vue-clerk/nuxt'],
+  clerk: {
+    appearance: {},
+  },
   vuefire: {
     config: {
       apiKey: "AIzaSyAY7FsO0j2z4mwrSypC3YM1FRqBoN9Z_m0",

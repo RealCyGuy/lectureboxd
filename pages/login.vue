@@ -2,8 +2,6 @@
   <div>
     <h1>login</h1>
     <form @submit="signin" action="javascript:void(0)">
-      <label for="name">Name</label>
-      <input type="name" id="name" name="name" required />
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required />
 
@@ -24,6 +22,7 @@ const user = await getCurrentUser();
 console.log(user);
 
 function signin() {
+  console.log(4);
   const email = document.getElementById("email").value;
 
   sendSignInLinkToEmail(auth, email, {
@@ -64,7 +63,7 @@ onMounted(() => {
         // getAdditionalUserInfo(result)?.profile
         // You can check if the user is new or existing:
         // getAdditionalUserInfo(result)?.isNewUser
-        navigateTo("/");
+        navigateTo("/setup");
       })
       .catch((error) => {
         // Some error occurred, you can inspect the code: error.code
