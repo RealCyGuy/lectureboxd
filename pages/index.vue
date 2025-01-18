@@ -13,6 +13,12 @@ import Header from '@/pages/header.vue';
 =======
 import { signOut } from "firebase/auth";
 import { collection, query } from "firebase/firestore";
+<<<<<<< Updated upstream
+=======
+
+const db = useFirestore();
+const users = useCollection(query(collection(db, "users")));
+>>>>>>> Stashed changes
 
 const db = useFirestore();
 const users = useCollection(query(collection(db, "users")));
