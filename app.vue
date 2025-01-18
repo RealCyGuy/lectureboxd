@@ -1,5 +1,13 @@
 <template>
   <div>
+    <header>
+      <SignedOut>
+        <SignInButton />
+      </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
+    </header>
     <NuxtPage />
   </div>
   <!-- <div>
