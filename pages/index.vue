@@ -10,7 +10,7 @@ const user = await useCurrentUser();
 const auth = useFirebaseAuth();
 
 function signout() {
-  signOut(auth)
+  signOut(auth
     .then(() => {
       console.log("Sign out successful");
     })
