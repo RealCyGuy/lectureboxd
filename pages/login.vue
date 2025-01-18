@@ -2,8 +2,11 @@
   <div>
     <h1>login</h1>
     <form @submit="signin" action="javascript:void(0)">
+      <label for="name">Name</label>
+      <input type="name" id="name" name="name" required />
       <label for="email">Email</label>
       <input type="email" id="email" name="email" required />
+
       <button type="submit">Sign in with email link</button>
     </form>
   </div>
