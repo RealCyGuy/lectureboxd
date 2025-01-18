@@ -1,5 +1,5 @@
 <template>
-  <h1>welcome, {{ user.email }}</h1>
+  <h1> Hello, {{ user.email || 'guest'}}! Welcome back to LectureBoxd!</h1>
   <button @click="signout">Sign out</button>
 </template>
 
